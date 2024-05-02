@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo Card Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Bingo Card Generator</h1>
+    <input type="number" id="numCards" value="1" min="1" max="100" />
+    <button onclick="generateMultipleCards()">Generate Multiple Cards</button>
+    <button onclick="downloadPDF()">Download as PDF</button>
+
+    <div class="container">
+      <table id="bingoCard">
+        <!-- Bingo grid will be generated here -->
+      </table>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.0.0-rc.7/html2canvas.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.0.0-rc.7/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
